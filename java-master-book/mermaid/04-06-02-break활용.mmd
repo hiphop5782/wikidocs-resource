@@ -1,0 +1,12 @@
+graph TD
+    loop[반복 시작]
+    loop --> c
+    c[탈출 조건 검사]
+    c --> |true| d[break]
+    c --> |false| a
+    a[코드 블록 실행]
+    a --> c
+    d ---> e[반복 종료]
+
+style c fill:dodgerblue,color:white
+style d fill:firebrick,color:white
