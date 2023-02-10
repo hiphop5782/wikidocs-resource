@@ -1,3 +1,8 @@
 graph TD
-    A[if] --> B[else if] --> C[else if] --> D[...] --> E[else]
+    A[if] --> |true| B[구문실행]
+    A --> |false| C[else if]
+    C --> |true| D[구문실행]
+    C --> |false| E[else if]
+    E --> |true| F[구문실행]
+    E --> |false| G[else 실행]
     
