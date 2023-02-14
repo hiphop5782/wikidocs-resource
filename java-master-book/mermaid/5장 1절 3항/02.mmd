@@ -1,0 +1,6 @@
+sequenceDiagram
+    Note left of main(): 프로그램 실행
+    main()->>+plus(): 호출(call) - 10, 20 전달
+    plus()--x-main(): 반환(return) - void
+    Note Over main(),plus(): 호출 후 결과 값을 기대할 수 없다
+    Note left of main(): 프로그램 종료
