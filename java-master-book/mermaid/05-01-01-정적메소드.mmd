@@ -1,6 +1,6 @@
 sequenceDiagram
-    JVM->>+main(): 1.호출(call)
-    main()->>+Robot.hello(): 2.호출(call)
-    Robot.hello()->>-main(): 3.반환(return)
-    main()->>-JVM: 4.반환(return)
+    Note left of main(): 프로그램 실행
+    main()->>+Robot.hello(): 1.호출(call)
+    Robot.hello()->>-main(): 2.반환(return)
+    Note left of main(): 프로그램 종료
             
