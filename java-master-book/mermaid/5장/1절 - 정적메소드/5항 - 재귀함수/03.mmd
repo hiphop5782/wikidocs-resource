@@ -1,0 +1,21 @@
+graph LR
+    a[A -> B -> C : 3개]
+    a --> b[A -> C -> B : 2개]
+    a --> c[A -> B -> C : 1개]
+    a --> d[B -> A -> C : 2개]
+    b --> e[A -> B -> C : 1개]
+    b --> f[A -> C -> B : 1개]
+    b --> g[C -> A -> B : 1개]
+    d --> h[B -> C -> A : 1개]
+    d --> i[B -> A -> C : 1개]
+    d --> j[A -> B -> C : 1개]
+
+style b fill:dodgerblue,color:white
+style d fill:dodgerblue,color:white
+style c fill:firebrick,color:white
+style e fill:firebrick,color:white
+style f fill:firebrick,color:white
+style g fill:firebrick,color:white
+style h fill:firebrick,color:white
+style i fill:firebrick,color:white
+style j fill:firebrick,color:white
