@@ -1,0 +1,16 @@
+classDiagram 
+    class Map {
+        <<interface>>
+    }
+    class SortedMap {
+        <<interface>>
+    }
+    class NavigableMap {
+        <<interface>>
+    }
+    Map <|-- Hashtable
+    Map <|-- HashMap
+    Map <|-- SortedMap
+    SortedMap <|-- NavigableMap
+    NavigableMap <|-- TreeMap
+    HashMap <|-- LinkedHashMap
