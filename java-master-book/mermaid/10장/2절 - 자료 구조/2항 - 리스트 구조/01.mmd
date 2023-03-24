@@ -1,0 +1,23 @@
+classDiagram 
+    class Collection {
+        <<interface>>
+    }
+    class List {
+        <<interface>>
+    }
+
+    Collection <|-- List
+    List <|-- AbstractList
+    AbstractList <|-- AbstractSequentialList
+    AbstractList <|-- ArrayList
+    AbstractList <|-- Vector
+    AbstractSequentialList <|-- LinkedList
+
+    ArrayList <|-- AttributeList
+    ArrayList <|-- RoleList
+    ArrayList <|-- RoleUnresolvedList
+
+    List <|-- CopyOnWriteArrayList
+
+    Vector <|-- Stack
+    
