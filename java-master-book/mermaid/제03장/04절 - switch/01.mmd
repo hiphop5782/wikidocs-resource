@@ -1,0 +1,33 @@
+graph LR
+    A[나이 입력]
+    A --> |0| B[초반]
+    A --> |1| C[초반]
+    A --> |2| D[초반]
+    A --> |3| E[중반]
+    A --> |4| F[중반]
+    A --> |5| G[중반]
+    A --> |6| H[중반]
+    A --> |7| I[후반]
+    A --> |8| J[후반]
+    A --> |9| K[후반]
+    B --> |break| L[종료]
+    B --> C
+    C --> |break| L
+    C --> D
+    D --> |break| L
+    D --> E
+    E --> |break| L
+    E --> F
+    F --> |break| L
+    F --> G
+    G --> |break| L
+    G --> H
+    H --> |break| L
+    H --> I
+    I --> |break| L
+    I --> J
+    J --> |break| L
+    J --> K
+    K --> |break| L
+
+    

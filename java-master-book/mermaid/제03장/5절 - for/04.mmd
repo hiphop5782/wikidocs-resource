@@ -1,0 +1,7 @@
+graph TD
+    A[반복 시작] --> B[i = 0]
+    B --> C[i < 5 ?]
+    C --> |true| D[Hello 출력]
+    D --> E[i = i + 1]
+    E --> C
+    C ----> |false| Z[반복 종료]

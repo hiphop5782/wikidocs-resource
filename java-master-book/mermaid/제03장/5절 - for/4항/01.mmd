@@ -1,0 +1,18 @@
+graph TD
+    aa[프로그램시작]
+    aa --> a[total 초기화]
+    a --> b[반복시작]
+    b --> c[i = 1]
+    c --> d[i가 100이하?]
+    d --> |true| e[i가 짝수?]
+    e --> |true| f[total 합산]
+    d ----> |false| g[반복 종료]
+    g --> h[total 출력]
+    e --> |false| i
+    f --> i[i 증가]
+    i --> d
+    h --> hh[프로그램종료]
+
+style a fill:dodgerblue,color:white
+style f fill:dodgerblue,color:white
+style h fill:dodgerblue,color:white

@@ -1,0 +1,14 @@
+classDiagram 
+    Mobile <|-- IPhone14
+
+    class Mobile {
+        -String number
+        -String telecom
+        -String color
+        -int price
+        +call():void
+        +sms():void
+    }
+    class IPhone14 {
+        +faceTime():void
+    }
